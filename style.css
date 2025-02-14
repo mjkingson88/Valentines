@@ -1,0 +1,81 @@
+h1{
+
+    text-align: center;
+    font-family: "Poppins", sans-serif; /* Modern clean font */
+    font-size: 80px; /* Large and bold */
+    font-weight: 700;
+    color: #333; /* Dark text for contrast */
+    text-shadow: 3px 3px 0px rgba(0, 0, 0, 0.2), 
+                 6px 6px 5px rgba(0, 0, 0, 0.1); /* Soft shadow for 3D effect */
+    letter-spacing: 2px; /* Spaced-out letters for modern look */
+    margin-bottom: 20px;
+}
+
+button{
+
+    margin: auto;
+    padding: 30px 100px;
+    font-size: 30px;
+    border-radius: 10%;
+    border-color: blanchedalmond;
+}
+html{
+    background-color:#FCE3EC
+}
+
+#yes{
+
+    background-color: burlywood;
+    font-family: sans-serif;
+
+}
+#cat{
+
+    width: 80%;  /* Adjust size (80% of its container) */
+    max-width: 500px; /* Set a maximum width */
+    height: auto; /* Keep aspect ratio */
+    display: block; /* Ensures proper alignment */
+    margin: 10px auto; /* Center the image */
+}
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; /* Space between images */
+    padding: 20px;
+}
+
+/* Polaroid effect */
+.gallery img {
+    width: 250px; /* Adjust image size */
+    height: 400;
+    background: white; /* Polaroid frame */
+    padding: 15px 15px 50px; /* Extra bottom space for caption effect */
+    border-radius: 5px; /* Optional: rounded edges */
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3); /* Creates shadow */
+    display: block;
+}
+
+/* Create a container for each Polaroid */
+.polaroid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background: white;
+    padding: 15px 15px 40px; /* White frame and bottom space */
+    border-radius: 5px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+    width: 250px;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    color: #333;
+}
+
+/* Add a fun tilt effect to look like real Polaroids */
+.polaroid:nth-child(even) {
+    transform: rotate(5deg);
+}
+.polaroid:nth-child(odd) {
+    transform: rotate(-5deg);
+}
